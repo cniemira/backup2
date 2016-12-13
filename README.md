@@ -1,16 +1,22 @@
-NAME
+# backup2
+
+Archived for posterity
+
+## manpage
+
+    NAME
     backup - Instant, system wide version control.
 
-SYNOPSIS
-     backup [-abcfiqsw] [FILE...]                  = Add files to archive
-     backup -d [-sv] FILE                          = Diff two files
-     backup -k [-s] PATH                           = Make an archive
-     backup -l [-abcefinsvw] [FILE...]             = List files in archive
-     backup -m [-abcfipsw] [FILE...] PATH          = Move an archive file
-     backup -r [-abefioqstvw] [FILE...]            = Restore an archive file
-     backup -z [-abcfiqsvw] [FILE...]              = Delete an archive file
+    SYNOPSIS
+    backup [-abcfiqsw] [FILE...]                  = Add files to archive
+    backup -d [-sv] FILE                          = Diff two files
+    backup -k [-s] PATH                           = Make an archive
+    backup -l [-abcefinsvw] [FILE...]             = List files in archive
+    backup -m [-abcfipsw] [FILE...] PATH          = Move an archive file
+    backup -r [-abefioqstvw] [FILE...]            = Restore an archive file
+    backup -z [-abcfiqsvw] [FILE...]              = Delete an archive file
 
-OPTIONS
+    OPTIONS
     -a        Operate against all files in the working directory
 
     -b        Display verbose output
@@ -41,7 +47,7 @@ OPTIONS
 
     -w PATH   Change the working directory (default: current)
 
-MACROS
+    MACROS
     Certain macros can be used in command line options as substitues for
     variables. For example, in the default "-e" they are used to append the
     date to restored files.
@@ -59,7 +65,7 @@ MACROS
 
     %V        Version number
 
-CODES
+    CODES
     'backup' uses the following exit codes
 
     0         No error
@@ -70,7 +76,7 @@ CODES
 
     4         Internal process error
 
-OUTPUT
+    OUTPUT
     'backup' uses the following output markers to identify changes or
     updates made:
 
@@ -96,15 +102,14 @@ OUTPUT
 
     V:        Archive Version
 
-VERSION
+    VERSION
     backup v0.2
 
-AUTHOR
+    AUTHOR
     CJ Niemira <siege@siege.org>
 
-COPYRIGHT
+    COPYRIGHT
     2008, CJ Niemira
 
-LICENSE
+    LICENSE
     This program is released under the GNU General Public License (GPL).
-
